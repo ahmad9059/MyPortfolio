@@ -107,6 +107,8 @@ nav a:hover {
 .logo {
   font-size: 2rem;
   color: var(--secondary-color);
+  font-weight: bold;
+
 }
 
 .logo:hover {
@@ -117,6 +119,7 @@ nav a:hover {
 
 #hamburger-nav {
   display: none;
+  
 }
 
 .hamburger-menu {
