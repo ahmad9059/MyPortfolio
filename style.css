@@ -11,7 +11,7 @@
   --secondary-color: black;
   --secondary-color-2: rgb(85, 85, 85);
   --button-background: rgb(53, 53, 53);
-  --button-text-hover: grey;
+  --button-text-hover: white;
   --button-border: rgb(53, 53, 53) 0.1rem solid;
   --button-border-2: rgb(255, 255, 255) 0.1rem solid;
   --container-border: rgb(163, 163, 163);
@@ -20,16 +20,16 @@
 /* Dark Mode */
 [theme="dark"] {
   --primary-color: black;
-  --primary-color-2: rgb(39, 39, 39);
-  --primary-color-3: rgb(74, 74, 74);
-  --background-color: rgb(33, 33, 33);
+  --primary-color-2: rgb(0, 0, 0);
+  --primary-color-3: rgb(000, 000, 000);
+  --background-color: rgb(0, 0, 0);
   --secondary-color: white;
-  --secondary-color-2: rgb(170, 170, 170);
-  --button-background: rgb(202, 202, 202);
-  --button-text-hover: lightgrey;
-  --button-border: rgb(202, 202, 202) 0.1rem solid;
+  --secondary-color-2: white;
+  --button-background: white;
+  --button-text-hover: white;
+  --button-border: white 0.1rem solid;
   --button-border-2: rgb(0, 0, 0) 0.1rem solid;
-  --container-border: rgb(92, 92, 92);
+  --container-border: white;
 }
 
 * {
