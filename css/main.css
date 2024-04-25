@@ -5855,7 +5855,7 @@ a.post-thumbnail:hover {
 
   .post-thumbnail {
     
-    margin: 50px;
+    margin: 40px auto;
     z-index: 0;
   }
 
