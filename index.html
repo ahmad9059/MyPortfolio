@@ -1,436 +1,490 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/assets/ahmad-circle.png" type="image/x-icon">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <title>Ahmad Hassan</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Ahmad Hassan</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li>
-            <img
-              id="modeToggle"
-              class="icon color-icon"
-              src="./assets/theme_light.png"
-              src-light="./assets/theme_light.png"
-              src-dark="./assets/theme_dark.png"
-              alt="Color them icon"
-            />
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Ahmad Hassan</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          <li>
-            <img
-              id="modeToggle2"
-              class="icon color-icon"
-              src="./assets/theme_light.png"
-              src-light="./assets/theme_light.png"
-              src-dark="./assets/theme_dark.png"
-              alt="Color them icon"
-            />
-          </li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/ahmad-circle.png" alt="Ahmad Hassan profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Ahmad Hassan</h1>
-        <p class="section__text__p2">Software Engineer</p>
-        <div class="btn-container">
-          <button
-    class="btn btn-color-2"
-    onclick="window.open('https://drive.google.com/file/d/1tMEht0uzn4UWWjVNYeGYXwBPug5D_5Mv/view?usp=sharing', '_blank')">
-    Download CV
-      </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin_light.png"
-            src-light="./assets/linkedin_light.png"
-            src-dark="./assets/linkedin_dark.png"
-            alt="My LinkedIn profile"
-            class="icon linkedin-icon"
-            onclick="window.open('https://linkedin.com/in/ahmad9059', '_blank')"
-          />
-          <img
-            src="./assets/github_light.png"
-            src-light="./assets/github_light.png"
-            src-dark="./assets/github_dark.png"
-            alt="My github profile"
-            class="icon github-icon"
-            onclick="window.open('https://github.com/ahmad9059', '_blank')"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/Ahmad-Hassan.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience_light.png"
-                src-light="./assets/experience_light.png"
-                src-dark="./assets/experience_dark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Web Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education_light.png"
-                src-light="./assets/education_light.png"
-                src-dark="./assets/education_dark.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>BSCS Bachelors Degree<br />Intermediate in Computer Science(ICS)</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Hello there! I'm Passionate Computer Science student specializing in Software Development and Cybersecurity at MNS University of Agriculture, Multan. Dedicated to creating innovative solutions against cyber threats. Completed various courses and projects in software and web development. Eager to collaborate at the intersection of computer science, software development, and cybersecurity for impactful results.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow_light.png"
-        src-light="./assets/arrow_light.png"
-        src-dark="./assets/arrow_dark.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Web Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark_light.png"
-                  src-light="./assets/checkmark_light.png"
-                  src-dark="./assets/checkmark_dark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark_light.png"
-                  src-light="./assets/checkmark_light.png"
-                  src-dark="./assets/checkmark_dark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark_light.png"
-                  src-light="./assets/checkmark_light.png"
-                  src-dark="./assets/checkmark_dark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark_light.png"
-                  src-light="./assets/checkmark_light.png"
-                  src-dark="./assets/checkmark_dark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git/GitHub</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark_light.png"
-                  src-light="./assets/checkmark_light.png"
-                  src-dark="./assets/checkmark_dark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Linux</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark_light.png"
-                  src-light="./assets/checkmark_light.png"
-                  src-dark="./assets/checkmark_dark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Computer Networking</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Technical Skills</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark_light.png"
-                  src-light="./assets/checkmark_light.png"
-                  src-dark="./assets/checkmark_dark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>DSA</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark_light.png"
-                  src-light="./assets/checkmark_light.png"
-                  src-dark="./assets/checkmark_dark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C/C++/Python</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark_light.png"
-                  src-light="./assets/checkmark_light.png"
-                  src-dark="./assets/checkmark_dark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MySQL</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark_light.png"
-                  src-light="./assets/checkmark_light.png"
-                  src-dark="./assets/checkmark_dark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Problem Solving</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow_light.png"
-        src-light="./assets/arrow_light.png"
-        src-dark="./assets/arrow_dark.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.webp"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Personal Portfolio</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/ahmad9059/MyPortfolio', '_blank')">
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://ahmad.study', '_blank')">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Ahmad Hassan Portfolio" />
+    <meta name="keywords" content="ahmadhassan,software,engineer, resposnive, retina, resume, jquery, css3, bootstrap, portfolio" />
+    <meta name="author" content="lmpixels" />
+    <link rel="shortcut icon" href="/img/favicon.png">
 
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/ahmad9059'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/ahmad9059'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/ahmad9059'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/ahmad9059'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
+
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <script src="js/modernizr.custom.js"></script>
+  </head>
+
+  <body class="page">
+
+    <div class="lm-animated-bg"></div>
+    
+    <!-- Loading animation -->
+    <div class="preloader">
+      <div class="preloader-animation">
+        <div class="preloader-spinner">
         </div>
       </div>
-      <img
-        src="./assets/arrow_light.png"
-        src-light="./assets/arrow_light.png"
-        src-dark="./assets/arrow_dark.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email_light.png"
-            src-light="./assets/email_light.png"
-            src-dark="./assets/email_dark.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">ahmadhassan9059@gmail.com</a></p>
+    </div>
+    <!-- /Loading animation -->
+
+    <!-- Scroll To Top Button -->
+    <div class="lmpixels-scroll-to-top"><i class="lnr lnr-chevron-up"></i></div>
+    <!-- /Scroll To Top Button -->
+
+    <div class="page-scroll">
+      <div id="page_container" class="page-container bg-move-effect" data-animation="transition-flip-in-right">
+
+        <!-- Header -->
+        <header id="site_header" class="header">
+          <div class="header-content clearfix">
+                
+            <!-- Text Logo -->
+            <div class="text-logo">
+              <a href="index.html">
+                <div class="logo-symbol">
+                  <img src="/img/favicon.png" alt="Logo Image" style="width: 45px; height: 45px;">
+                </div>
+                <div class="logo-text">Ahmad <span>Hassan</span></div>
+              </a>
+            </div>
+            <!-- /Text Logo -->
+
+            <!-- Navigation -->
+            <div class="site-nav mobile-menu-hide">
+              <ul class="leven-classic-menu site-main-menu">
+                <li class="menu-item  current-menu-item">
+                  <a href="index.html">About Me</a>
+                </li>
+
+                <li class="menu-item">
+                  <a href="resume.html">Resume</a>
+                </li>
+
+                <li class="menu-item">
+                  <a href="portfolio.html">Portfolio</a>
+                
+                </li>
+                
+                <li class="menu-item">
+                  <a href="blog-3-columns.html">Blog</a>
+
+                </li>
+
+                <li class="menu-item">
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <a class="menu-toggle mobile-visible">
+              <i class="fa fa-bars"></i>
+            </a>
+            <!-- Mobile Menu Toggle -->
+          </div>
+        </header>
+        <!-- /Header -->
+        <div id="main" class="site-main">
+          <div id="main-content" class="single-page-content">
+            <div id="primary" class="content-area">    
+              <div id="content" class="page-content site-content single-post" role="main">
+                <!-- Home Page Top Part -->
+                <div class="row">
+                  <div class=" col-xs-12 col-sm-12">
+                    <div class="home-content">
+                      <div class="row flex-v-align">
+                        
+                        <div class="col-sm-12 col-md-5 col-lg-5">
+                          <div class="home-photo">
+                            <div class="hp-inner" style="background-image: url(./img/profile-1.png);">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-7 col-lg-7">
+                          <div class="home-text hp-left">
+                            <div class="owl-carousel text-rotation">                                    
+                              <div class="item">
+                                <h4>Software Engineer</h4>
+                              </div>
+
+                              <div class="item">
+                                <h4>Web Designer</h4>
+                              </div>
+                            </div>
+                              
+                            <h1>Ahmad Hassan</h1>
+                            <p>Hello there! I'm Passionate Computer Science student specializing in Software Development and Cybersecurity at MNS University of Agriculture, Multan. Dedicated to creating innovative solutions against cyber threats. Completed various courses and projects in software and web development. Eager to collaborate at the intersection of computer science, software development, and cybersecurity for impactful results.</p>
+                                 
+                            <div class="home-buttons">
+                              <a href="https://drive.google.com/file/d/1tMEht0uzn4UWWjVNYeGYXwBPug5D_5Mv/view" target="_blank" class="btn btn-primary">Download CV</a>
+                              <a href="https://www.linkedin.com/in/ahmad9059/" target="_blank" class="btn btn-secondary">Linkedin</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Home Page Top Part -->
+
+                <!-- Services -->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12">
+                    <div class="p-50"></div>
+
+                    <div class="block-title">
+                      <h2>What I Do</h2>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="info-list-w-icon">
+                      <div class="info-block-w-icon">
+                        <div class="ci-icon">
+                          <i class="linecons linecons-world"></i>
+                        </div>
+      
+                        <div class="ci-text">
+                          <h4>MERN Stack</h4>
+                          <p>I've specialized in MERN Stack Development, mastering MongoDB, Express.js, React.js, and Node.js. With this stack, I've built dynamic web applications, covering both backend and frontend development, utilizing the power of JavaScript throughout the process.</p>
+                        </div>
+                      </div>
+    
+                      <div class="info-block-w-icon">
+                        <div class="ci-icon">
+                          <i class="linecons linecons-data"></i>
+                        </div>
+     
+                        <div class="ci-text">
+                          <h4>Data Structure and Algorithms(DSA)</h4>
+                          <p>Proficient in DSA, having solved 200+ problems on platforms like LeetCode and GeeksforGeeks. This, coupled with my expertise in MERN Stack Development, enables me to excel in web development with precision and creativity.                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="info-list-w-icon">
+
+                      <div class="info-block-w-icon">
+                        <div class="ci-icon">
+                          <i class="linecons linecons-display"></i>
+                        </div>
+
+                        <div class="ci-text">
+                          <h4>Linux Expert</h4>
+                          <p>Skilled in Linux, I leverage its robust capabilities for development and system administration. From scripting to networking, my proficiency in Linux enhances my ability to innovate and streamline processes, contributing to efficient and scalable solutions in tech.</p>
+                        </div>
+                      </div>
+
+                      <div class="info-block-w-icon">
+                        <div class="ci-icon">
+                          <i class="linecons linecons-cloud"></i>
+                        </div>
+
+                        <div class="ci-text">
+                          <h4>Cloud Computing</h4>
+                          <p>Proficient in cloud computing, I harness its power to deploy, scale, and manage applications seamlessly. With expertise in platforms like AWS, Azure, and Google Cloud, I optimize infrastructure, ensuring reliability and performance in the digital realm.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Services -->
+
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12">
+                    <div class="p-20"></div>
+
+                    <!-- Testimonials -->
+                    <div class="block-title">
+                      <h2>Testimonials</h2>
+                    </div>
+
+                    <div id="testimonials_1" class="testimonials owl-carousel" data-mobile-items="1" data-tablet-items="2" data-items="2">
+                      <!-- Testimonial 1 -->
+                      <div class="testimonial-item">
+                        <!-- Testimonial Content -->
+                        <div class="testimonial-content">
+                          <!-- Picture -->
+                          <div class="testimonial-picture">
+                            <img src="./img/testimonials/test.webp" alt="Billy Adams"/>
+                          </div>              
+                          <!-- /Picture -->
+
+                          <!-- Testimonial Text -->
+                          <div class="testimonial-text">
+                             <p>Ahmad Hassan's mastery of the MERN Stack and problem-solving skills make him an invaluable asset.</p>
+                          </div>
+                          <!-- /Testimonial Text -->
+
+                          <!-- Testimonial author information -->
+                          <div class="testimonial-author-info">
+                            <h5 class="testimonial-author">Ahtasham</h5>
+                            <p class="testimonial-firm">Rolling Thunder</p>
+                          </div>
+                          <!-- /Testimonial author information -->
+
+                          <div class="testimonial-icon">
+                            <i class="fa fa-quote-left"></i>
+                          </div>
+
+                           <div class="testimonial-icon-big">
+                            <i class="fa fa-quote-right"></i>
+                          </div>
+                        </div>
+                        <!-- /Testimonial Content -->
+                      </div>
+                      <!-- End of Testimonial 1 -->
+
+                      <!-- Testimonial 2 -->
+                      <div class="testimonial-item">
+                        <!-- Testimonial Content -->
+                        <div class="testimonial-content">
+                          <!-- Picture -->
+                          <div class="testimonial-picture">
+                            <img src="./img/testimonials/test2.webp" alt="Gary Johnson"/>
+                          </div>              
+                          <!-- /Picture -->
+
+                          <!-- Testimonial Text -->
+                          <div class="testimonial-text">
+                             <p>Proficiency in Linux administration is impressive and highly effective.I am really happy to work with Ahmad.</p>
+                          </div>
+                          <!-- /Testimonial Text -->
+
+                          <!-- Testimonial author information -->
+                          <div class="testimonial-author-info">
+                            <h5 class="testimonial-author">Hashan Rao</h5>
+                            <p class="testimonial-firm">Locost Accessories</p>
+                          </div>
+                          <!-- /Testimonial author information -->
+
+                          <div class="testimonial-icon">
+                            <i class="fa fa-quote-left"></i>
+                          </div>
+
+                           <div class="testimonial-icon-big">
+                            <i class="fa fa-quote-right"></i>
+                          </div>
+                        </div>
+                        <!-- /Testimonial Content -->
+                      </div>
+                      <!-- End of Testimonial 2 -->
+
+                      <!-- End of Testimonial 3 -->
+                      <div class="testimonial-item">
+
+                        <!-- Testimonial Content -->
+                        <div class="testimonial-content">
+                          <!-- Picture -->
+                          <div class="testimonial-picture">
+                            <img src="./img/testimonials/test3.webp" alt="Daniel Pringle"/>
+                          </div>              
+                          <!-- /Picture -->
+
+                          <!-- Testimonial Text -->
+                          <div class="testimonial-text">
+                            <p>Ahmad's expertise in cloud computing ensures efficient and scalable solutions</p>
+                          </div>
+                          <!-- /Testimonial Text -->
+
+                          <!-- Testimonial author information -->
+                          <div class="testimonial-author-info">
+                            <h5 class="testimonial-author">Moeen Anas</h5>
+                            <p class="testimonial-firm">Sagebrush</p>
+                          </div>
+                          <!-- /Testimonial author information -->
+
+                          <div class="testimonial-icon">
+                            <i class="fa fa-quote-left"></i>
+                          </div>
+
+                          <div class="testimonial-icon-big">
+                            <i class="fa fa-quote-right"></i>
+                          </div>
+                        </div>
+                        <!-- /Testimonial Content -->
+
+                      </div>
+                      <!-- End of Testimonial 3 -->
+                    </div>
+                    <!-- /Testimonials -->
+
+                    <div class="p-40"></div>
+
+                    <!-- Clients Slider -->
+                  <!-- <div class="block-title">
+                      <h2>Clients</h2>
+                    </div>
+
+                    <div id="clients_1" class="clients owl-carousel" data-mobile-items="1" data-tablet-items="3" data-items="6">
+                      <div class="client-block">
+                        <a href="#" target="_blank" title="Golden Grid">
+                          <img src="./img/clients/client-1.png" alt="Golden Grid">
+                        </a>
+                      </div>
+
+                      <div class="client-block">
+                        <a href="#" target="_blank" title="Sweety">
+                          <img src="./img/clients/client-2.png" alt="Sweety">
+                        </a>
+                      </div>
+
+                      <div class="client-block">
+                        <a href="#" target="_blank" title="Magic Furnitures">
+                          <img src="./img/clients/client-3.png" alt="Magic Furnitures">
+                        </a>
+                      </div>
+
+                      <div class="client-block">
+                        <a href="#" target="_blank" title="LifeGuard">
+                          <img src="./img/clients/client-4.png" alt="LifeGuard">
+                        </a>
+                      </div>
+
+                      <div class="client-block">
+                        <a href="#" target="_blank" title="LESS">
+                          <img src="./img/clients/client-5.png" alt="LESS">
+                        </a>
+                      </div>
+
+                      <div class="client-block">
+                        <a href="#" target="_blank" title="Design Lovers">
+                          <img src="./img/clients/client-6.png" alt="Design Lovers">
+                        </a>
+                      </div>
+
+                      <div class="client-block">
+                        <a href="#" target="_blank" title="WordPress">
+                          <img src="./img/clients/client-7.png" alt="WordPress">
+                        </a>
+                      </div>
+                    </div> -->
+                    <!-- /Clients Slider -->
+
+                    <div class="p-40"></div>
+
+                  </div>
+                </div>
+
+                <!-- Fun Facts -->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12">
+                    <div class="block-title">
+                      <h2>Fun Facts</h2>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12 col-sm-3">
+                    <div class="lm-info-block gray-default">
+                      <i class="linecons linecons-heart"></i>
+                      <h4>Certifications</h4>
+                      <span class="lm-info-block-value">32</span>
+                      <span class="lm-info-block-text"></span>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-3">
+                    <div class="lm-info-block gray-default">
+                      <i class="linecons linecons-clock"></i>
+                      <h4>Working Hours</h4>
+                      <span class="lm-info-block-value">4,780+</span>
+                      <span class="lm-info-block-text"></span>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-3 ">
+                    <div class="lm-info-block gray-default">
+                      <i class="linecons linecons-star"></i>
+                      <h4>Awards Won</h4>
+                      <span class="lm-info-block-value">12</span>
+                      <span class="lm-info-block-text"></span>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-3 ">
+                    <div class="lm-info-block gray-default">
+                      <i class="linecons linecons-cup"></i>
+                      <h4>Coffee Consumed</h4>
+                      <span class="lm-info-block-value">1,286+</span>
+                      <span class="lm-info-block-text"></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Fun Facts -->
+
+                <div class="p-40"></div>
+
+                <!-- Pricing -->
+                              </div>
+
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin_light.png"
-            src-light="./assets/linkedin_light.png"
-            src-dark="./assets/linkedin_dark.png"
-            alt="My LinkedIn profile"
-            class="icon linkedin-icon"
-            onclick="location.href='https://linkedin.com/ahmad9059'"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-        </div>
+
+        <!-- Footer -->
+        <footer class="site-footer clearfix">
+          <div class="footer-social">
+            <ul class="footer-social-links">
+              <li>
+                <a href="https://github.com/ahmad9059" target="_blank">GitHub</a>
+              </li>
+              <li>
+                <a href="https://leetcode.com/ahmad9059/" target="_blank">LeetCode</a>
+              </li>
+              <li>
+                <a href="mailto:ahmadhassan9059@gmail.com" target="_blank">E-Mail</a>
+              </li>
+              <li>
+                <a href="https://api.whatsapp.com/send/?phone=%2B923277378264&text&type=phone_number&app_absent=0" target="_blank">Whatsapp</a>
+              </li>
+              <li>
+                <a href="https://twitter.com/ahmadhassan9059" target="_blank">Twitter</a>
+              </li>
+
+              <li>
+                <a href="https://www.facebook.com/ahmadhassan9059" target="_blank">Facebook</a>
+              </li>
+
+              <li>
+                <a href="https://www.instagram.com/ahmad_hassan9059/" target="_blank">Instagram</a>
+              </li>
+            </ul>
+          </div>
+              
+          <div class="footer-copyrights">
+            <p>© 2024 All rights reserved. Ahmad Hassan.</p>
+          </div>
+        </footer>
+        <!-- /Footer -->
+        
       </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2023 Ahmad Hassan. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src='js/jquery.shuffle.min.js'></script>
+    <script src='js/masonry.pkgd.min.js'></script>
+    <script src='js/owl.carousel.min.js'></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrDf32aQTCVENBhFJbMBKOUTiUAABtC2o"></script>
+    <script src="js/jquery.googlemap.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
