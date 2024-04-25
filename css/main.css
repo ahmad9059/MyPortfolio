@@ -3770,6 +3770,7 @@ a.post-thumbnail:hover {
 .full-width .post-thumbnail img {
   display: block;
   margin: 0 auto;
+  
 }
 
 /* ======= Comments ====== */
@@ -4444,6 +4445,7 @@ a.post-thumbnail:hover {
 .attachment .content-sidebar,
 .attachment .post-thumbnail {
   display: none;
+  
 }
 
 .attachment .entry-content {
