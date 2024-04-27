@@ -1660,7 +1660,10 @@ h3.comment-reply-title:before {
     text-align: left;
     padding-right: 10px;
 }
+.home-text p{
+  font-size: 14px;
 
+}
 .home-text.hp-left {
     padding-left: 25px;
     padding-right: 0;
@@ -1902,7 +1905,7 @@ ul.social-links li:last-child a {
 }
 
 .info-block-w-icon .ci-text p {
-  font-size: .92em;
+  font-size: 14px;
 }
 
 .info-block-w-icon .ci-text p:last-child {
@@ -4202,6 +4205,12 @@ a.post-thumbnail:hover {
 .page-content a.button,
 .comment-content a.button {
   text-decoration: none;
+}
+.entry-content p{
+  font-size: 18px;
+}
+.entry-content li{
+  font-size: 16px;
 }
 
 .entry-content table,
